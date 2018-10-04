@@ -1,0 +1,2 @@
+Object.defineProperty(exports,"__esModule",{value:true});var _Switch=require('./Switch');Object.defineProperty(exports,'Switch',{enumerable:true,get:function get(){return _Switch.Switch;}});
+//# sourceMappingURL=index.js.map

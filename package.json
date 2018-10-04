@@ -2,10 +2,11 @@
   "name": "react-native-switch",
   "version": "1.5.0",
   "description": "Customisable switch component for RN",
-  "main": "index.js",
+  "main": "dist/index.js",
   "types": "index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "rm -rf dist/* && babel . --out-dir dist --ignore node_modules,dist --source-maps "
   },
   "keywords": [
     "react-native",
@@ -28,5 +29,10 @@
   },
   "dependencies": {
     "prop-types": "^15.6.0"
+  },
+  "devDependencies": {
+    "babel-preset-react-native": "^4.0.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-cli": "^6.26.0"
   }
 }
